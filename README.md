@@ -1,4 +1,4 @@
-![Lyft](assets/img/logo-pink.png)
+![Lyft](assets/img/logo-readme.jpg)
 
 * **Track:** _Common Core_
 * **Curso:** _Creando tu primera red social_
