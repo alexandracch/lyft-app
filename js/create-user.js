@@ -65,6 +65,16 @@ $(document).ready(function() {
       desactiveButton();
     }
   });
+  // local storage 
+  $submit.on('click', function(event) {
+    event.preventDefault();
+    localStorage.email = $inputEmail.val();
+    localStorage.name = $inputName.val();
+    localStorage.lastname = $inputLastName.val();
+
+    window.location.href = 'login.html';
+  });
+
 
   // Activar y desactivar botón
 
