@@ -30,7 +30,7 @@ $(document).ready(function() {
     }
   });
   $submit.on('click', function() {
-      event.preventDefault();
+    event.preventDefault();
     if ($email.val() === localStorage.email && $inputName.val() === localStorage.name && $inputLastName.val() === localStorage.lastname) {
       alert('Hi! U are in :D');
       window.location.href = 'check.html';

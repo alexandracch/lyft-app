@@ -19,17 +19,17 @@ $(document).ready(function() {
       desactiveButton();
     }
   });
-	// local storage y codigo 
-	$submit.on('click', function() {
-		event.preventDefault();
-		if (submitAll) {
-      var code = 'LAB';
+  // local storage y codigo 
+  $submit.on('click', function() {
+    event.preventDefault();
+    if (submitAll) {
+      var code = '';
       for (var i = 0; i < 3; i++) {
         var nums = Math.round(Math.random() * 9);
         code += nums;
       }
 
-      alert(code);
+      alert('Lyft code : LAB - ' + code);
 
       localStorage.setItem('saveCode', code);
 
@@ -37,14 +37,14 @@ $(document).ready(function() {
       localStorage.setItem('Telephone', obtNum);
 
 
-			window.location.href = 'verify.html';
+      window.location.href = 'verify.html';
 
       var verify = window.location.href;
       if (verify < 0) {
         submitAll = false;
       }
     }
-});
+  });
   // activar boton 
 
   function activeButton() {

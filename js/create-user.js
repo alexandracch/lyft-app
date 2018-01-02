@@ -72,7 +72,7 @@ $(document).ready(function() {
     localStorage.name = $inputName.val();
     localStorage.lastname = $inputLastName.val();
 
-    window.location.href = 'login.html';
+    window.location.href = 'check.html';
   });
 
 
