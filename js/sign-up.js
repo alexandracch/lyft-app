@@ -1,32 +1,36 @@
 $(document).ready(function() {
+// seleccion de input
   var $inputTelephone = $('#inputTelephone');
-  var $submit = $('a[type=submit]'); // sleccionando boton
+  var $submit = $('a[type=submit]')
+  // variable verificadora
+
   var verifyTelephone = false;
-  // $expresion = '/^[9|6|7][0-9]{8}$/'
-  
-  // validando telefono
+
+  // asociando eventos a los elementos seleccionados
+
   $inputTelephone.on('input', function(event) {
     var patternTelephone = /^[9|6|7][0-9]{8}$/;
-
+    
     if (patternTelephone.test($(this).val())) {
-      console.log('ta bien');
+      verifyTelephone = true;
+      activeButton();
     } else {
-        console.log('ta mal');
+      desactiveButton();
     }
   });
 
-  // Activar y desactivar botón
+  // activar boton 
 
-// 
+  function activeButton() {
+    if (verifyTelephone) {
+      $submit.attr('disabled', false);
+    }
+  }
+
+  function desactiveButton() {
+    $submit.attr('disabled', true);
+  } 
+
 });
 
 
-//function activeButton() {
-    //     if (verifyTelephone) {
-    //       $submit.attr('disabled', false);
-    //     }
-    //   }
-    
-    //   function desactiveButton() {
-    //     $submit.attr('disabled', true);
-    //   }
