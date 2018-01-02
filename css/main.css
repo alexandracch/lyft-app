@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* all */
+.container-flex-row{
+    display: flex;
+    justify-content: space-between;
+}
+    
+.container-flex-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+/* index */
+.logo-lyft {
+    /* margin-top:10vh; */
+    width: 45vh;
+    height: 40vh;
+}
+
+.gif {
+    background-image: url('../assets/img/lyft-mars.gif');
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+}
+/* register */
+
+.gif-register {
+    background-image: url('../assets/img/taxi.jpg');
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+}
+
+a {
+    color: pink;
+}
+/* Verify */
+.country {
+    width: 5vh;
+}
+
+.btn-next {
+    background-color: rgb(255, 4, 238);
+    color: white;
+    padding: 1.2em;
+}
+
+.phone-code {
+    border-color: rgb(228, 0, 228);
+    width: 5vh;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.div-code {
+    margin-top: 6vh;
+}
+
+.btn-gray {
+    margin-top: 3vh;
+    padding: 2vh;
+    background-color: rgb(226, 226, 226);
+    color: gray;
+}
+
+.moustache {
+    width: 20vh;
+    height: 10vh;
+}
+/*Register*/
+.btn-register {
+    border: 1px solid white;
+    padding: 2vh;
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+.logo-lyft-2 {
+    width: 25vh;
+    height: 18vh;
+    margin-bottom: 5vh;
+    font-size: 3rem;
+}
+
+/* Sign up */
+
+.lyft-car {
+    width: 30vh;
+    height: 20vh;
+    margin-bottom: 2vh;
+}
+
+/* create-user */
+
+.users {
+    width: 50vh;
+    height:20vh;
+}
+/* check */
+
+.check-gif {
+    background-image: url('../assets/img/lyft-check.gif');
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-position: center center; 
+    background-size: cover;
+}
+
+.confirm {
+    margin-top: 70vh;
+    padding: 5vh;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(224, 0, 253)
+}
+
+.check {
+    width: 3vh;
+    height: 3vh;
+}
