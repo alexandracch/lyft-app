@@ -5,7 +5,7 @@ $(document).ready(function() {
   var $inputEmail = $('#inputEmail');// seleccionando al input email
   var $submit = $('a[type=submit]'); // sleccionando boton
   // asociar los eventos a los elementos
-
+  // valida email
   $inputEmail.on('input', function() {
     if ($(this).val() === localStorage.name) {
       console.log('datos encontrados');
@@ -13,7 +13,7 @@ $(document).ready(function() {
       console.log('no tas');
     }
   });
-
+  // valida apellido
   $inputLastName.on('input', function() {
     if ($(this).val() === localStorage.lastname) {
       console.log('datos encontrados');
@@ -21,7 +21,7 @@ $(document).ready(function() {
       console.log('no tas');
     }
   });
-
+  // valida nombre
   $inputName.on('input', function() {
     if ($(this).val() === localStorage.name) {
       console.log('datos encontrados');
@@ -29,6 +29,7 @@ $(document).ready(function() {
       console.log('no tas');
     }
   });
+  // local storage
   $submit.on('click', function() {
     event.preventDefault();
     if ($email.val() === localStorage.email && $inputName.val() === localStorage.name && $inputLastName.val() === localStorage.lastname) {

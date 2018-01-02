@@ -2,6 +2,7 @@ $(document).ready(function() {
   // seleccion de input
   var $inputTelephone = $('#inputTelephone');
   var $submit = $('a[type=submit]');
+  
   // variable verificadora
 
   var verifyTelephone = false;
@@ -34,14 +35,15 @@ $(document).ready(function() {
       localStorage.setItem('saveCode', code);
 
       var obtNum = $('#inputTelephone').val();
-      localStorage.setItem('Telephone', obtNum);
+      localStorage.setItem('Telephone', obtNum); // crea local storage del codigo para la siguiente vista
 
 
-      window.location.href = 'verify.html';
-
-      var verify = window.location.href;
-      if (verify < 0) {
-        submitAll = false;
+      window.location.href = 'verify.html'; // siguiente vista
+    
+      // para la siguiente vista 
+      var verify = window.location.href; 
+      if (verify < 0) { 
+        submitAll = false; 
       }
     }
   });
